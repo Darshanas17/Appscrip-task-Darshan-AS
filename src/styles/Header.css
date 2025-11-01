@@ -1,0 +1,272 @@
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.top-section {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 96px;
+  align-self: center;
+  position: relative;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+}
+
+.icons-img {
+  width: 244px;
+  height: 24px;
+  opacity: 1;
+}
+
+.logo-text {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  width: 107px;
+  height: 44px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  opacity: 1;
+  align-self: center;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.nav a {
+  font-size: 24px;
+  margin-right: 64px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mobile-menu-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+}
+
+/* Laptop */
+@media (max-width: 1440px) {
+  .top-section {
+    padding: 30px 60px;
+  }
+
+  .nav a {
+    font-size: 20px;
+    margin-right: 48px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .top-section {
+    padding: 20px 40px;
+  }
+
+  .logo-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .icons-img {
+    width: 200px;
+    height: 20px;
+  }
+
+  .logo-text {
+    font-size: 28px;
+    width: 90px;
+    height: 36px;
+  }
+
+  .nav {
+    gap: 40px;
+  }
+
+  .nav a {
+    font-size: 18px;
+    margin-right: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .top-section {
+    padding: 15px 60px 15px 80px; /* Extra left padding for menu icon */
+    position: relative;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+
+  .logo-img {
+    width: 28px;
+    height: 28px;
+    order: 1;
+  }
+
+  .icons-img {
+    width: 180px;
+    height: 18px;
+    order: 3;
+  }
+
+  .logo-text {
+    font-size: 24px;
+    width: 80px;
+    height: 32px;
+    order: 2;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px 30px 30px;
+    margin: 0;
+    gap: 0;
+    z-index: 99;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+  }
+
+  .nav-open {
+    left: 0;
+  }
+
+  .nav a {
+    font-size: 18px;
+    margin-right: 0;
+    margin-bottom: 25px;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-overlay {
+    display: block;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .top-section {
+    padding: 12px 50px 12px 70px;
+  }
+
+  .mobile-menu-icon {
+    width: 20px;
+    height: 16px;
+    left: 15px;
+  }
+
+  .logo-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .icons-img {
+    width: 150px;
+    height: 15px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+    width: 70px;
+    height: 28px;
+  }
+
+  .nav {
+    width: 250px;
+    padding: 70px 25px 25px;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .top-section {
+    padding: 10px 40px 10px 60px;
+  }
+
+  .logo-img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .icons-img {
+    width: 130px;
+    height: 13px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    width: 65px;
+    height: 25px;
+  }
+}

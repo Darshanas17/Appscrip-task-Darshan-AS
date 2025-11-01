@@ -1,0 +1,37 @@
+.filter-sidebar {
+  width: 100%;
+  max-width: 350px;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.filter-section {
+  margin-bottom: 1rem;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #111;
+  padding: 0.5rem 0;
+}
+
+.filter-content {
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.unselect {
+  font-size: 0.8rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.unselect:hover {
+  color: #000;
+}
