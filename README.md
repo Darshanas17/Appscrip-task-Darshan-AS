@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Product Display Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+A comprehensive React-based web application designed to showcase products in an interactive and user-friendly interface. This project demonstrates modern React development practices, responsive design principles, and efficient state management.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Responsive Product Grid**: Dynamic grid layout that adapts to different screen sizes
+- **Advanced Filtering**: Intuitive filtering system for product categorization
+- **Modern UI Components**:
+  - Header with navigation
+  - Product cards with detailed information
+  - Filter sidebar with multiple options
+- **Performance Optimized**: Efficient rendering and state management
+- **Cross-Browser Compatibility**: Works seamlessly across modern browsers
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+frontend/
+├── public/
+│   ├── index.html
+│   └── assets/
+├── src/
+│   ├── components/
+│   │   ├── Filters.js        # Product filtering functionality
+│   │   ├── Header.js         # Application header component
+│   │   ├── Home.js           # Main page component
+│   │   ├── ProductCard.js    # Individual product display
+│   │   └── ProductGrid.js    # Product grid layout
+│   ├── styles/
+│   │   ├── Filters.css
+│   │   ├── Header.css
+│   │   ├── Home.css
+│   │   ├── ProductCard.css
+│   │   └── ProductGrid.css
+│   ├── App.js
+│   └── index.js
+└── package.json
+```
 
-### `npm test`
+## Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend Framework**: React.js (v19.2.0)
+- **State Management**: React Hooks
+- **HTTP Client**: Axios
+- **Meta Tags**: React Helmet
+- **Styling**: CSS with Modern Features
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Run the application:
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app will run on [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Component Details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Header (`Header.js`)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Main navigation component
+- Responsive design with mobile menu
+- Brand logo and navigation links
 
-## Learn More
+### Product Grid (`ProductGrid.js`)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Dynamic grid layout
+- Responsive to screen sizes
+- Efficient product rendering
+- Integration with filtering system
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Filters (`Filters.js`)
 
-### Code Splitting
+- Multiple filter categories
+- Real-time filtering
+- Mobile-responsive design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Product Card (`ProductCard.js`)
 
-### Analyzing the Bundle Size
+- Individual product display
+- Product details presentation
+- Interactive elements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Home (`Home.js`)
 
-### Making a Progressive Web App
+- Main page layout
+- Components composition
+- State management
+- Filter integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Styling
 
-### Advanced Configuration
+- Component-specific CSS files
+- Responsive design principles
+- CSS variables for consistency
+- Mobile-first approach
+- Cross-browser compatibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+**Darshan AS**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub: [Darshanas17](https://github.com/Darshanas17)
+- Project Link: [Appscrip-task-Darshan-AS](https://github.com/Darshanas17/Appscrip-task-Darshan-AS)
